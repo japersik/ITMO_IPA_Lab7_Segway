@@ -12,8 +12,8 @@ Skript  | Action
 [start_config.m](Segway/start_config.m)  | Setting the state of operation and controller
 [variables_set.m](Segway/variables_set.m)  | Parameters of the robot
 [matrix_set.m](Segway/matrix_set.m)  | Calculation of coefficients.
-plot _ **.m  | graph ** (after dividing)
-[plot_all2.m](Segway/plot_all2.m)  | all graphs (after dividin
+plot _ **.m  | graph ** (after modeling)
+[plot_all2.m](Segway/plot_all2.m)  | all graphs (after modeling)
 ------------
 Model List:
 ------------
