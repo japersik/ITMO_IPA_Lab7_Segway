@@ -3,42 +3,53 @@
 # Integrated Data Systems Inc.
 # www.ids-net.com
 
-DEF wheel_1 Transform {
+DEF WheelGroup1 Transform {
   translation 0 2 3
-  rotation -1 0 0 1.5708
-  children Shape {
-    appearance Appearance {
-      textureTransform TextureTransform {
+  scaleOrientation 0 0 -1 0
+  rotation 0 0 -1 0
+  children Group {
+    children DEF wheel_1 Transform {
+      rotation 1 0 0 1.5708
+      children Shape {
+        appearance Appearance {
+          textureTransform TextureTransform {
+          }
+          texture ImageTexture {
+            url "1.jpg" 
+          }
+          material Material {
+          }
+        }
+        geometry Cylinder {
+          radius 1.5
+          height 1
+        }
       }
-      texture ImageTexture {
-        url "1.jpg" 
-      }
-      material Material {
-      }
-    }
-    geometry Cylinder {
-      radius 1.5
-      height 1
     }
   }
 }
-DEF wheel_2 Transform {
+DEF WheelGroup2 Transform {
   translation 0 2 -3
-  scaleOrientation 1 0 0 0
-  rotation -2 0 0 1.5707
-  children Shape {
-    appearance Appearance {
-      textureTransform TextureTransform {
+  rotation 0 0 -1 0
+  children DEF WheelGroup Group {
+    children DEF wheel_2 Transform {
+      scaleOrientation 1 0 0 0
+      rotation 1 0 0 1.5707
+      children Shape {
+        appearance Appearance {
+          textureTransform TextureTransform {
+          }
+          texture ImageTexture {
+            url "1.jpg" 
+          }
+          material Material {
+          }
+        }
+        geometry Cylinder {
+          radius 1.5
+          height 1
+        }
       }
-      texture ImageTexture {
-        url "1.jpg" 
-      }
-      material Material {
-      }
-    }
-    geometry Cylinder {
-      radius 1.5
-      height 1
     }
   }
 }
